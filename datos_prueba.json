@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "category": "Rostro",
+      "name": "Base Líquida Alta Cobertura",
+      "price": "$6.999",
+      "stocked": true
+    },
+    {
+      "id": "2",
+      "category": "Labios",
+      "name": "Labial Mate Velvet",
+      "price": "$4.999",
+      "stocked": true
+    },
+    {
+      "id": "3",
+      "category": "Ojos",
+      "name": "Paleta de Sombras Nude",
+      "price": "$12.999",
+      "stocked": false
+    },
+    {
+      "id": "4",
+      "category": "Ojos",
+      "name": "Máscara de Pestañas Volume+",
+      "price": "$5.999",
+      "stocked": true
+    },
+    {
+      "id": "5",
+      "category": "Rostro",
+      "name": "Rubor en Polvo Compacto",
+      "price": "$3.999",
+      "stocked": false
+    },
+    {
+      "id": "6",
+      "category": "Accesorios",
+      "name": "Set de Brochas Profesionales",
+      "price": "$14.999",
+      "stocked": true
+    },
+    {
+      "id": "7",
+      "category": "Rostro",
+      "name": "Corrector de Ojeras Líquido",
+      "price": "$4.499",
+      "stocked": true
+    },
+    {
+      "id": "8",
+      "category": "Labios",
+      "name": "Gloss Labial Hidratante",
+      "price": "$3.999",
+      "stocked": true
+    },
+    {
+      "id": "9",
+      "category": "Ojos",
+      "name": "Delineador de Ojos Plumón Negrura",
+      "price": "$4.999",
+      "stocked": true
+    },
+    {
+      "id": "10",
+      "category": "Rostro",
+      "name": "Polvos Translúcidos Matificantes",
+      "price": "$5.499",
+      "stocked": false
+    },
+    {
+      "id": "11",
+      "category": "Cejas",
+      "name": "Pomada para Cejas con Pincel",
+      "price": "$4.999",
+      "stocked": true
+    },
+    {
+      "id": "12",
+      "category": "Rostro",
+      "name": "Iluminador Highlighter Glow",
+      "price": "$6.499",
+      "stocked": true
+    }
+  ]
+}
