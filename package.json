@@ -17,6 +17,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@jsdevtools/coverage-istanbul-loader": "^3.0.5",
     "@tailwindcss/turbopack": "^4",
     "@types/jasmine": "^7.0.0",
     "@types/node": "^20",
@@ -27,6 +28,7 @@
     "jasmine-core": "^7.0.2",
     "karma": "^6.4.4",
     "karma-chrome-launcher": "^3.2.0",
+    "karma-coverage": "^2.2.1",
     "karma-jasmine": "^5.1.0",
     "karma-spec-reporter": "^0.0.37",
     "karma-webpack": "^5.0.1",

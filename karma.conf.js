@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = function (config) {
   config.set({
@@ -9,6 +10,11 @@ module.exports = function (config) {
       mode: 'development',
       devtool: 'inline-source-map',
       resolve: { extensions: ['.tsx', '.ts', '.js'] },
+      plugins: [
+        new webpack.DefinePlugin({
+          'process.env': JSON.stringify(process.env)
+        })
+      ],
       module: {
         rules: [
           {
@@ -22,10 +28,24 @@ module.exports = function (config) {
               },
             },
           },
+          {
+            test: /\.tsx?$/,
+            include: path.resolve(__dirname, 'app'),
+            exclude: /node_modules/,
+            enforce: 'post',
+            use: '@jsdevtools/coverage-istanbul-loader'
+          }
         ],
       },
     },
-    reporters: ['spec'],
+    reporters: ['spec', 'coverage'],
+    coverageReporter: {
+      dir: 'coverage/',
+      reporters: [
+        { type: 'html', subdir: 'report-html' },
+        { type: 'text-summary' }
+      ]
+    },
     browsers: ['ChromeHeadless'],
     singleRun: true,
   });
