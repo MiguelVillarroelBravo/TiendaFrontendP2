@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 interface Product {
   id: string;
@@ -48,6 +49,9 @@ export default function Cart({ cart, onRemoveFromCart }: CartProps) {
             <div className="d-flex justify-content-between fw-bold">
               <span>Total de productos:</span>
               <span style={{ color: '#c2185b' }}>{cart.length}</span>
+              <Link href="/checkout" className="btn btn-glam w-100 mt-3" style={{ borderRadius: '25px' }}>
+                Ir a pagar
+              </Link>
             </div>
           </div>
         </div>

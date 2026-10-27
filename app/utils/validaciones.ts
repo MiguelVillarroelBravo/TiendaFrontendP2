@@ -33,3 +33,35 @@ export function validarContacto(datos: DatosContacto): ErroresContacto {
 
   return errores;
 }
+
+export interface DatosCheckout {
+  nombre: string;
+  apellidos: string;
+  correo: string;
+  calle: string;
+  departamento: string;
+  region: string;
+  comuna: string;
+  indicaciones: string;
+}
+
+export type ErroresCheckout = Partial<Record<keyof DatosCheckout, string>>;
+
+export function validarCheckout(d: DatosCheckout): ErroresCheckout {
+  const errores: ErroresCheckout = {};
+
+  if (!d.nombre.trim()) errores.nombre = 'El nombre es obligatorio';
+  if (!d.apellidos.trim()) errores.apellidos = 'Los apellidos son obligatorios';
+
+  if (!d.correo.trim()) {
+    errores.correo = 'El correo es obligatorio';
+  } else if (!validarCorreo(d.correo.trim())) {
+    errores.correo = 'Ingresa un correo válido';
+  }
+
+  if (!d.calle.trim()) errores.calle = 'La calle es obligatoria';
+  if (!d.region) errores.region = 'Selecciona una región';
+  if (!d.comuna) errores.comuna = 'Selecciona una comuna';
+
+  return errores;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 interface Product {
   id: string;
@@ -25,7 +26,9 @@ export default function ProductCatalog({ products, onAddToCart }: ProductCatalog
             <div className="p-3 product-card-glam shadow-glam d-flex flex-column justify-content-between h-100">
               <div>
                 <span className="badge badge-gold mb-2">{product.category}</span>
-                <h5 className="fw-bold fs-6 mt-1 mb-2">{product.name}</h5>
+                <Link href={`/producto/${product.id}`} className="text-decoration-none text-dark">
+                  <h5 className="fw-bold fs-6 mt-1 mb-2">{product.name}</h5>
+                </Link>
                 <p className="fw-bold fs-5" style={{ color: '#c2185b' }}>{product.price}</p>
               </div>
               <button
