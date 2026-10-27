@@ -1,14 +1,17 @@
+import ContactForm from '../components/ContactForm';
+
 export default function Contacto() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-
-      <h2>  
-        Puedes contactarnos a traves de nuestro correo norbert@gmail.com
-      </h2>
-
-
-      </main>
+    <div className="container my-4">
+      <div className="row justify-content-center">
+        <div className="col-12 col-md-8 col-lg-6">
+          <h2 className="fw-bold mb-2" style={{ color: '#c2185b' }}>Contáctanos</h2>
+          <p className="text-muted mb-4">
+            También puedes escribirnos a norbert@gmail.com
+          </p>
+          <ContactForm />
+        </div>
+      </div>
     </div>
   );
 }
