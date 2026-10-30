@@ -1,6 +1,6 @@
-# Norbert Makeup - Tienda de Maquillaje Online
+# Norbert - Tienda de Maquillaje Online
 
-Aplicación web frontend de comercio electrónico desarrollada para **Norbert Makeup**, construida con **React 19**, **Next.js (App Router)**, **TypeScript** y **Bootstrap 5**. Incluye gestión de estado global para el carrito de compras, validaciones reactivas de formularios y una suite completa de pruebas unitarias automatizadas con **Jasmine**, **Karma** y reportes de cobertura con **Istanbul**.
+Aplicación web frontend de comercio electrónico desarrollada para **Norbert**, construida con **React 19**, **Next.js (App Router)**, **TypeScript** y **Bootstrap 5**. Incluye gestión de estado global para el carrito de compras, validaciones reactivas de formularios y una suite completa de pruebas unitarias automatizadas con **Jasmine**, **Karma** y reportes de cobertura con **Istanbul**.
 
 ---
 
